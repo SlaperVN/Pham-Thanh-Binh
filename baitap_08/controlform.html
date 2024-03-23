@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Thiết kế Web</title>
+    </head>
+
+    <body>
+        <form action="#" method="get">
+            <p>Username: <input type="text" name="username"></p>
+            <p>Password: <input type="password" name="password"></p>
+            <label for="question">Câu hỏi bí mật:</label>
+            <p>
+                Ngày sinh:
+                    <input type="date" name="ngaysinh" >
+            </p>
+            </p><textarea name="question" cols="40" rows="5">
+                Nội dung:
+            </textarea>
+            <p>Phai:
+                <input type="radio" name="gender" value="Male" checked>
+                <label for="gender">Nam</label>
+                <input type="radio" name="gender" value="Female">
+                <label for="gender">Nữ</label>
+            </p>
+            <fieldset>
+                <legend>
+                    Sở thích
+                </legend>
+                <input type="checkbox" name="sothich" value="music">
+                <label for="music">Âm nhạc</label>
+                <br>
+                <input type="checkbox" name="guitar" value="guitar">
+                <label for="guitar">Đánh đàn</label>
+            </fieldset>
+            
+            <p>
+                <label for="thietbi">Thiết bị thường sử dụng: </label>
+                <select name="thietbi" id="#" multiple>
+                    <option value="Laptop">Laptop</option>
+                    <option value="PC">PC</option>
+                    <option value="phone">Phone</option>
+                </select>
+            </p>
+            <p>
+                <label for="thietbi">Thiết bị thường sử dụng: </label>
+                <select name="thietbi" id="#">
+                    <option></option>
+                    <option value="Laptop" selected>Laptop</option>
+                    <option value="PC">PC</option>
+                    <option value="phone">Phone</option>
+                </select>
+            </p>
+            <p>
+                CV:
+                <input type="file" name="cv"/>
+            </p>
+            <p>
+                <input type="hidden" name="giatrian" value="1"/>
+            </p>
+            <p>
+                <input type="submit" value="Đang ky"/> 
+                <input type="reset" value="reset"> 
+                <input type="button" value="button"/>
+            </p>
+            <p>
+                <input type="image" src="planet.png"/>
+            </p>
+        </form>
+    </body>
+</html>
