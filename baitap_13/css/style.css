@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color:brown;
+}
+b {
+    color:blue !important;
+}
+b {
+    color: yellow;
+}
+p {
+    color: black;
+}
+#chitiet {
+    color:aqua;
+    font-size: large;
+}
+p {
+    color:purple;
+}
+ul a {
+    color:blue;
+}
+p>a {
+    color:rgb(14, 253, 14);
+}
+.noidung_javascript {
+    color:red;
+}
