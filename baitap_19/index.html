@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                font-family: 'Courier New', Courier, monospace;
+            }
+            h1 {
+                text-shadow: 1px 1px 2px red;
+            }
+            ul {
+                border-top: 1px solid black; 
+                border-bottom: 2px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+            li,a {
+                display: inline;
+                margin-right: 10px;
+                text-decoration: none;
+                color: red;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                
+            }
+            th,td {
+                background-color: rgb(172, 242, 242);
+                border-top: 1px solid rgb(183, 176, 176);
+                border-bottom: 2px solid rgb(195, 190, 190);
+                border-right: 1px solid rgb(169, 163, 163);
+                text-align: center;
+                padding: 5px;
+            }
+            tr.head_top th {
+                color: #fff;
+                background-color: #90b4d6;
+                border-bottom: 2px solid #547ca0;
+                border-right: 1px solid #749abe;
+                border-top: 1px solid #90b4d6;
+                text-align: center;
+                text-shadow: -1px -1px 1px #666;
+                letter-spacing: 0.15em;
+            }
+            tr.head_left th {
+                font-weight: bold;
+                text-align: left;
+            }
+            tr.even td,
+            tr.even th {
+                background-color: #e8eff5;
+            }
+            tr.head th:first-child {
+                -webkit-border-top-left: 5px;
+                -moz-border-radius-topleft: 5px;
+                border-top-left-radius: 5px;
+            }
+
+            tr.head th:last-child {
+                -webkit-border-top-right: 5px;
+                -moz-border-radius-topright: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            /*---------------------------------*/
+            fieldset {
+                width: 360px;
+                margin-top: 10px;
+                border: 1px solid red;
+                background-color: #ffffffff;
+                line-height: 1.6em;
+            }
+            legend {
+                font-style: italic;
+                color: blueviolet
+            }
+            input[type="text"] {
+                width: 200px;
+            }
+            input[type="text"]:focus,
+            input[type="text"]:hover {
+                border: 1px solid #f70707;
+            }
+            input[type="submit"] {
+                border: 1px solid #006633;
+                background-color: #009966;
+                color: #FFFFFF;
+                border-radius: 5px;
+                padding: 5px;
+                margin-top: 10px;
+            }
+            .title {
+                font-weight: bold;
+                float: left;
+            }
+            .submit{
+                width: 310px;
+                text-align: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Các buổi chiếu phim miễn phí</h1>
+        <p>Chúng tôi sẽ tổ chức một số buổi chiếu phim miễn phí cho cộng đồng</p>
+        <p>Vui lòng lưu ý rằng các sự kiện sau đây miễn phí cho mọi người tham dự</p>
+        <ul>
+            <li><a href="#">Biệt đội siêu anh hùng</a></li>
+            <li><a href="#">Cô ba Sài Gòn</a></li>
+            <li><a href="#">Siêu nhân</a></li>
+        </ul>
+        <table>
+            <tr class="head_top">
+                <th></th>
+                <th>New York</th>
+                <th>Chicago</th>
+                <th>San Francisco</th>
+            </tr>
+            <tr class="head_left">
+                <th>Biệt đội siêu anh hùng</th>
+                <td>Thứ 3</td>
+                <td>Thứ 5</td>
+                <td>Thứ 7</td>
+            </tr>
+            <tr class="head_left">
+                <th>Cô ba Sài Gòn</th>
+                <td>Thứ 2</td>
+                <td>Thứ 5</td>
+                <td>Thứ 6</td>
+            </tr>
+            <tr class="head_left">
+                <th>Siêu nhân</th>
+                <td>Thứ 2</td>
+                <td>Thứ 3</td>
+                <td>Thứ 4</td>
+            </tr>
+        </table>
+        <form action="#" method="get">
+            <fieldset>
+            <legend>Đăng ký sự quan tâm của bạn</legend>
+                <p>
+                    <label class="title" for="name">Tên của bạn:</label>
+                    <input type="text" name="name" id="name" required>
+                </p>
+                <p>
+                    <lable class="title" for="email">Email của bạn:</label>
+                    <input type="text" name="email" id="email" required>
+                </p>
+                <br>
+                <p>
+                    <p>Chọn rạp chiếu phim gần nhất của bạn:</p>
+                    <select name="diadiem" id="location">
+                        <option value="New York">New York</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="San Francisco">San Francisco</option>
+                    </select>
+                </p>
+                <p>
+                    <span class="title">Bạn có muốn nhận thông tin từ chúng tôi không ?</span>
+                    <input type="radio" name="yes" value="yes">
+                    <label for="yes">Có</label>
+                    <input type="radio" name="no" value="no">
+                    <label for="yes">không</label>
+                </p>
+            </fieldset>
+            <div class="submit"><input type="submit" value="Gửi"></div>
+        </form>
+    </body>
+</html>
