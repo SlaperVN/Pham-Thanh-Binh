@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function xuly() {
+                ip = document.getElementById("username");
+                div = document.getElementById("content");
+
+                div.innerText = "Xin chào: " + ip.value;
+            }
+        </script>
+    </head>
+
+    <body>
+        Nhập tên: <input type="text" id="username" onkeyup="xuly()"/>
+        <div id="content">Xin chào: </div>
+    </body>
+</html>

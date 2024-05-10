@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function cong() {
+                a = document.getElementById("a");
+                b = document.getElementById("b");
+                ketqua = document.getElementById("ketqua");
+
+                ketqua.value = parseInt(a.value) + parseInt(b.value);
+            }
+
+            function tru() {
+                a = document.getElementById("a");
+                b = document.getElementById("b");
+                ketqua = document.getElementById("ketqua");
+
+                ketqua.value = parseInt(a.value) - parseInt(b.value);
+            }
+
+            function nhan() {
+                a = document.getElementById("a");
+                b = document.getElementById("b");
+                ketqua = document.getElementById("ketqua");
+
+                ketqua.value = parseInt(a.value) * parseInt(b.value);
+            }
+
+            function chia() {
+                a = document.getElementById("a");
+                b = document.getElementById("b");
+                ketqua = document.getElementById("ketqua");
+
+                ketqua.value = parseFloat(a.value) / parseFloat(b.value);
+            }
+        </script>
+    </head>
+
+    <body>
+        <input type="text" id="a">
+        <input type="text" id="b">
+        <input type="text" id="ketqua">
+        <br>
+        <button onclick="cong()">+</button> |
+        <button onclick="tru()">-</button> |
+        <button onclick="nhan()">x</button> |
+        <button onclick="chia()">/</button>
+    </body>
+</html>
